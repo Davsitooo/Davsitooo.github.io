@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 208, 0);
+}
+
+header{
+    
+    .nav-principal{
+        font-size: 1.2rem;
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: rgba(252, 255, 71, 0.836);
+        margin: 10px;
+    }
+    .links{
+        padding: 2.5%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        
+        & li{
+            list-style: none;
+        }
+        
+        & a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .logo{
+            position: fixed;
+            left: 38%;
+            top: -1.6rem;
+         }
+
+        .logo:hover{
+            -webkit-transform: rotate(360deg);
+            transition: 2s ease-in-out;
+
+        }
+
+    }
+
+    .links li:hover{
+        background-color: rgba(229, 255, 0, 0.651);
+     }
+
+}
+
+main{
+
+    background-image: url(/img/main2.jpg);
+    background-size: cover;
+    padding: 15rem;
+    padding-top: 20rem ;
+    
+
+    .titulos{
+        text-align: center;
+
+            & a{
+                font-size: 3rem;
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+                background-color: rgba(251, 225, 134, 0.692) ;
+                margin: 6%;
+                padding: 2%;
+                
+            }
+            
+        & h2{
+            color: rgb(5, 5, 5);
+            font-size: 1.6rem;
+            margin: 6%;
+            padding: 1.5%;
+            background-color: rgba(251, 255, 4, 0.692) ;
+
+        }
+    }
+
+    .titulos a:hover{
+        background-color: rgb(226, 203, 72);
+    }
+}
+
+footer{
+    padding: 5%;
+    justify-content: space-between;
+    display: flex;
+}
